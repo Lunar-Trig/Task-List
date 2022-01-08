@@ -1,0 +1,110 @@
+*{
+    padding: 0;
+}
+
+
+h1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: slateblue;
+}
+
+li{
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.2em;
+    text-align: center;
+    border: 2px solid slateblue;
+    width: 14em;
+    margin-bottom: 1ex;
+    padding-top: 0.5ex;
+    padding-bottom: 1ex;
+    background-image: url('../image/delete-btn.png');
+    background-repeat: no-repeat;
+    background-position: 12em 0.9ex;
+}
+
+ul{
+    list-style: none;
+}
+
+/* card */
+.card{
+    margin: 0 auto;
+    display: block;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: 12px solid slateblue;
+    border-radius: 1em;
+    width:32em;
+    height: 34em;
+    position: relative;
+    top:7em;
+}
+
+.card-content{
+    margin: 1.4em;
+}
+
+.card-top{
+    display: block;
+}
+/* form */
+
+form label{
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bolder;
+    font-size: 1.234em;
+}
+
+form input{
+    border:none;
+    border-bottom: 2px solid slateblue;
+    padding-right: 19em;
+    position: relative;
+    top:2em;
+    margin-bottom:8em;
+}
+
+form input::placeholder{
+    font-size: 2.5ex;
+    color: gray;
+}
+
+form input:focus{
+    outline: none;
+}
+
+form input:hover{
+    cursor: pointer;
+}
+
+form button{
+    color: white;
+    border: none;
+    font-weight: bolder;
+    background-color: slateblue;
+    padding:1.4ex;
+    border-radius: 0.4em;
+    position: relative;
+    bottom: 3em;
+}
+
+form button:hover{
+    cursor: pointer;
+}
+
+/* card-list */
+
+.clear-btn{
+    color: white;
+    background-color: slateblue;
+    border: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bolder;
+    font-size: 15px;
+    padding:1ex;
+}
+
+.clear-btn:hover{
+    cursor: pointer;
+}
