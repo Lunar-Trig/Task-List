@@ -8,6 +8,7 @@ h1{
     color: slateblue;
 }
 
+
 li{
     color: black;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -18,13 +19,17 @@ li{
     margin-bottom: 1ex;
     padding-top: 0.5ex;
     padding-bottom: 1ex;
-    background-image: url('../image/delete-btn.png');
-    background-repeat: no-repeat;
-    background-position: 12em 0.9ex;
 }
 
-ul{
+.collection{
     list-style: none;
+}
+
+a{
+    color: slateblue;
+    float: right;
+    position: relative;
+    right:1.5em;
 }
 
 /* card */
@@ -107,4 +112,36 @@ form button:hover{
 
 .clear-btn:hover{
     cursor: pointer;
+}
+
+@media screen and (max-width:670px){
+    .card{
+        height:21em;
+        width: 27em;
+    }
+
+    form label{
+       display: none; 
+    }
+
+    form input{
+        width:6em;
+        position: relative;
+        top:1px;
+        left:2px;
+    }
+
+    form button{
+        position: relative;
+        bottom:7em;
+    }
+
+    .card-list{
+        position: relative;
+        bottom: 5.5em;
+    }
+
+    ul.collection li:nth-of-type(1n+2){
+        display: none;
+    }
 }
