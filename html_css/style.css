@@ -21,16 +21,17 @@ li{
     padding-bottom: 1ex;
 }
 
+ul a{
+    color: slateblue;
+    float: right;
+    position: relative;
+    right:1.6em;
+}
+
 .collection{
     list-style: none;
 }
 
-a{
-    color: slateblue;
-    float: right;
-    position: relative;
-    right:1.5em;
-}
 
 /* card */
 .card{
@@ -39,8 +40,8 @@ a{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     border: 12px solid slateblue;
     border-radius: 1em;
-    width:32em;
-    height: 34em;
+    width:33em;
+    height:fit-content;
     position: relative;
     top:7em;
 }
@@ -52,6 +53,21 @@ a{
 .card-top{
     display: block;
 }
+
+.card-list{
+    margin-bottom: 4em;
+}
+
+.card-save a{
+    text-decoration: none;
+    color: slateblue;
+    font-weight: 600;
+    border-bottom: 3px solid slateblue;
+    position: relative;
+    left:24.5em;
+    bottom: 1ex;
+}
+
 /* form */
 
 form label{
@@ -116,8 +132,12 @@ form button:hover{
 
 @media screen and (max-width:670px){
     .card{
-        height:21em;
+        height:fit-content;
         width: 27em;
+    }
+
+    .card-list{
+        margin-bottom: 0;
     }
 
     form label{
@@ -141,7 +161,8 @@ form button:hover{
         bottom: 5.5em;
     }
 
-    ul.collection li:nth-of-type(1n+2){
-        display: none;
+    .card-save{
+        position: relative;
+        right:6em;
     }
 }
